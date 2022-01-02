@@ -1,17 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "@emotion/styled";
 
 import { worksData } from "../../data.js";
 import nextIPProject from "../../images/nextIPProject.png";
 import nirsalProject from "../../images/nirsalProject.png";
-import reactProject from "../../images/nirsalProject.png";
 import loopStudios from "../../images/loopstudios.png";
 import converter from "../../images/converter.png";
+import easzi from "../../images/easzi.png";
 import website from "../../images/website.png";
-import AOS from "aos";
+
 import "aos/dist/aos.css";
 // import reactProject from "../../images/nirsalProject.png";
-const images = [nirsalProject, nextIPProject, converter, loopStudios, website];
+const images = [
+  easzi,
+  nirsalProject,
+  website,
+  nextIPProject,
+  converter,
+  loopStudios,
+];
 
 const Works = ({ direction, content }) => {
   const gotoProject = (url) => {
@@ -29,7 +36,7 @@ const Works = ({ direction, content }) => {
   // });
   return (
     <StyledWorksWrapper className={"works-section"} id={"my-works"}>
-      <h2 className={"sub-title"}>Some Little Works</h2>
+      <h2 className={"sub-title"}>Some Projects</h2>
       {worksData.map((work, index) => (
         <StyledLayout
           data-aos="fade-in"
@@ -100,6 +107,7 @@ const StyledLayout = styled.div`
   display: grid;
   grid-template-columns: 150px 1fr 1fr 1fr 150px;
   grid-template-rows: 100px 1fr 1fr;
+  border-radius: 10px;
 
   .work-description-left,
   .work-description-right {
@@ -117,6 +125,8 @@ const StyledLayout = styled.div`
     justify-content: center;
     flex-direction: column;
     /* border-radius: 20px 20px 0 0; */
+    border-radius: 10px;
+    overflow: hidden;
   }
 
   .work-description-left h3,

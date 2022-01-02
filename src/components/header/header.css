@@ -92,10 +92,10 @@ html {
   top: -5vw; */
   background-color: #071b37;
   border-radius: 50%;
-  height: 40vw;
-  width: 40vw;
-  max-width: 500px;
-  max-height: 500px;
+  height: 30vw;
+  width: 30vw;
+  max-width: 300px;
+  max-height: 300px;
   overflow: hidden;
   background-image: url("../../images/kenchi.png");
   background-position: 10px;
